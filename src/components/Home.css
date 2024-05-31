@@ -1,0 +1,41 @@
+/* src/components/Home.css */
+div {
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Asegura que el header ocupe toda la pantalla */
+    width: 100vw; /* Asegura que el header ocupe todo el ancho */
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
+  }
+  
+  h1 {
+    position: absolute;
+    top: 30%; /* Ajusta este valor para mover el texto más arriba o más abajo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: hsl(0, 23%, 94%,0.85);
+    font-size: 3.5em;
+    font-family: 'Helvetica', sans-serif; /* Aplicar la fuente Helvetica */
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 30px; /* Bordes redondeados (opcional) */
+    border-color: black;
+  }
+  
+  p {
+    position: absolute;
+    bottom: 150px; /* Aumentar la distancia para dar espacio a la flecha */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: hsl(0, 23%, 94%,0.85);
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif; /* Aplicar la fuente Helvetica */
+    text-align: center; /* Asegurar que el texto esté centrado */
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+  }
+  

@@ -1,0 +1,43 @@
+/* src/components/Navbar.css */
+
+/* Estilo para el contenedor del navbar */
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Estilo para la lista de enlaces en el navbar */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para cada elemento de la lista del navbar */
+  nav ul li {
+    color: white;
+  }
+  
+  /* Estilo para los enlaces en el navbar */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilo para el enlace activo en el navbar */
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Ajuste del relleno del cuerpo para evitar que el contenido quede debajo del navbar */
+  body {
+    padding-top: 4rem; /* Ajusta este valor si el navbar tiene diferente altura */
+  }
+  

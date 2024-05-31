@@ -1,0 +1,11 @@
+/* src/index.css */
+
+/* Restablecer márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+
+  margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+}
+
