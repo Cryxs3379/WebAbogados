@@ -1,11 +1,16 @@
 /* src/index.css */
 
 /* Restablecer márgenes y rellenos */
-* {
+/* src/index.css */
+
+body {
   margin: 0;
   padding: 0;
-
-  margin: 0; /* Eliminar márgenes */
-    padding: 0; /* Eliminar padding */
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100vh; /* Asegura que el cuerpo del documento cubre toda la ventana */
+  overflow: hidden; /* Evita scroll innecesario */
 }
-
