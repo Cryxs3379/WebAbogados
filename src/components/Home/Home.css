@@ -8,28 +8,30 @@ div {
     background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
   }
   
-  h1 {
+  .home h1 {
     position: absolute;
     top: 30%; /* Ajusta este valor para mover el texto más arriba o más abajo */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -180%);
     z-index: 10;
-    color: hsl(0, 23%, 94%,0.85);
+    color: hsl(0, 0%, 100%);
     font-size: 3.5em;
     font-family: 'Helvetica', sans-serif; /* Aplicar la fuente Helvetica */
     background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
-    padding: 10px; /* Espacio alrededor del texto */
+    padding: 15px; /* Espacio alrededor del texto */
     border-radius: 30px; /* Bordes redondeados (opcional) */
     border-color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para resaltar el texto */
+    
   }
   
-  p {
+ .home p {
     position: absolute;
     bottom: 150px; /* Aumentar la distancia para dar espacio a la flecha */
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    color: hsl(0, 23%, 94%,0.85);
+    color: hsl(0, 23%, 94%);
     font-size: 3.5em;
     font-weight: bold;
     font-family: 'Helvetica', sans-serif; /* Aplicar la fuente Helvetica */

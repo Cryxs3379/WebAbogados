@@ -7,11 +7,10 @@ const Home = () => {
   return (
     <div className="home">
       <Carousel />
-      <h1>Inicio</h1>
-      <p>Bienvenido a nuestro sitio web de abogados.</p>
+      <h1>MBC Abogados</h1>
+      <p>¿En que podemos ayudarte?.</p>
     </div>
   );
 };
 
 export default Home;
-
