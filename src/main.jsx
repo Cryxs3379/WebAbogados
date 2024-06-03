@@ -6,11 +6,11 @@ import './index.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import AboutUs from './components/AboutUs/AboutUs';
-import Nosotros from './components/Nosotros/Nosotros';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import MiCuenta from './components/MiCuenta/MiCuenta';
 import PrivateRoute from './components/PrivateRoute';
+import Localizanos from './components/Localizanos/Localizanos';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/nosotros" element={<Localizanos />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route

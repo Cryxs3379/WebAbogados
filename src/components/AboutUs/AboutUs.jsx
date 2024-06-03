@@ -8,7 +8,7 @@ const AboutUs = () => {
     <div className="about-us">
       <Carousel />
       <div className="about-us-content">
-        <h1>About Us</h1>
+        <h1>Sobre Nosotros</h1>
         <p>Información sobre nosotros.</p>
       </div>
     </div>
