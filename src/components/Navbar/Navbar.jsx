@@ -15,8 +15,8 @@ const Navbar = () => {
     <nav>
       <ul>
         <li><NavLink to="/">Inicio</NavLink></li>
-        <li><NavLink to="/about">About Us</NavLink></li>
-        <li><NavLink to="/nosotros">Nosotros</NavLink></li>
+        <li><NavLink to="/about">Nosotros</NavLink></li>
+        <li><NavLink to="/nosotros">Localizanos</NavLink></li>
         {user ? (
           <>
             <li><NavLink to="/mi-cuenta">Mi Cuenta</NavLink></li>
@@ -25,7 +25,7 @@ const Navbar = () => {
         ) : (
           <>
             <li><NavLink to="/login">Login</NavLink></li>
-            <li><NavLink to="/register">Register</NavLink></li>
+            {/* <li><NavLink to="/register">Register</NavLink></li> */}
           </>
         )}
       </ul>
