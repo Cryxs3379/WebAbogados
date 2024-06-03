@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import image1 from '../assets/malagadenoche.jpg';
-import image2 from '../assets/city-7137958.jpg';
+import image1 from '../../assets/malagadenoche.jpg';
+import image2 from '../../assets/city-7137958.jpg';
 import './Carousel.css';
 
 const images = [image1, image2];

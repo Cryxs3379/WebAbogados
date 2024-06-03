@@ -1,31 +1,31 @@
-// src/components/auth/Register.jsx
-import './Register.css';
+// src/components/auth/Login.jsx
+import './Login.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../firebaseConfig';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../firebase/firebaseConfig';
 
-const Register = () => {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleRegister = async (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, email, password);
       navigate('/mi-cuenta');
     } catch (error) {
-      setError('Error registering: ' + error.message);
+      setError('Error logging in: ' + error.message);
     }
   };
 
   return (
     <div className="container">
-      <h1>Register</h1>
+      <h1>Login</h1>
       {error && <p>{error}</p>}
-      <form onSubmit={handleRegister}>
+      <form onSubmit={handleLogin}>
         <input
           type="email"
           value={email}
@@ -38,13 +38,12 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
-        <button type="submit">Register</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
 };
 
-export default Register;
-
+export default Login;
 
 

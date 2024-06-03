@@ -1,0 +1,34 @@
+/* src/components/Navbar.css */
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 20px; /* Ajusta esta distancia según tus necesidades */
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(51, 51, 51, 0.8); /* Hace que el Navbar sea un poco transparente */
+  padding: 1rem;
+  box-sizing: border-box; /* Asegura que el padding no afecta al ancho total */
+  margin-top: 20px; /* Espacio adicional desde la parte superior del navegador */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}

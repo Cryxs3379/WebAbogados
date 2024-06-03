@@ -2,7 +2,7 @@
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../firebaseConfig';
+import { auth } from '../../firebase/firebaseConfig';
 
 const Navbar = () => {
     

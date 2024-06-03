@@ -1,6 +1,6 @@
 // src/components/Home.jsx
 import './Home.css';
-import CarouselComponent from './Carousel';
+import CarouselComponent  from '../Carousel/Carousel';
 const Home = () => {
   return (
     

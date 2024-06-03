@@ -1,7 +1,7 @@
 // src/components/MiCuenta.jsx
 import './MiCuenta.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../firebaseConfig';
+import { auth } from '../../firebase/firebaseConfig';
 
 const MiCuenta = () => {
   const [user] = useAuthState(auth);

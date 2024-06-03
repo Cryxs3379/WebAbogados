@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-import Nosotros from './components/Nosotros';
-import Navbar from './components/Navbar';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import AboutUs from './components/AboutUs/AboutUs';
+import Nosotros from './components/Nosotros/Nosotros';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
+import MiCuenta from './components/MiCuenta/MiCuenta';
 import PrivateRoute from './components/PrivateRoute';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -24,7 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           path="/mi-cuenta"
           element={
             <PrivateRoute>
-              <div>Mi Cuenta</div>
+              <MiCuenta />
             </PrivateRoute>
           }
         />
