@@ -10,7 +10,7 @@ div {
   
   .home h1 {
     position: absolute;
-    top: 30%; /* Ajusta este valor para mover el texto más arriba o más abajo */
+    top: 40%; /* Ajusta este valor para mover el texto más arriba o más abajo */
     left: 50%;
     transform: translate(-50%, -180%);
     z-index: 10;

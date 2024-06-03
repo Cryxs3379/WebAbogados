@@ -10,6 +10,7 @@ const Home = () => {
       <Carousel />
       <h1>MBC Abogados</h1>
       <p>¿En que podemos ayudarte?.</p>
+      
     </div>
     </>
   );

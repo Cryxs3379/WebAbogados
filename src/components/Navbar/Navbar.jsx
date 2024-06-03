@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await auth.signOut();
+    
   };
 
   return (
