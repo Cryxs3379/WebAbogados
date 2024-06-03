@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase/firebaseConfig';
+import CarouselComponent from '../Carousel/Carousel';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -22,7 +23,9 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className="login">
+      <CarouselComponent />
+      <div className="login-content">
       <h1>Login</h1>
       {error && <p>{error}</p>}
       <form onSubmit={handleLogin}>
@@ -40,6 +43,7 @@ const Login = () => {
         />
         <button type="submit">Login</button>
       </form>
+    </div>
     </div>
   );
 };
