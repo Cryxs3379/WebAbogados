@@ -1,11 +1,10 @@
-// src/components/Navbar.jsx
+// src/components/Navbar/Navbar.jsx
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase/firebaseConfig';
 
 const Navbar = () => {
-    
   const [user] = useAuthState(auth);
 
   const handleLogout = async () => {
@@ -16,8 +15,8 @@ const Navbar = () => {
     <nav>
       <ul>
         <li><NavLink to="/">Inicio</NavLink></li>
-        <li><NavLink to="/about">Sobre nosotros</NavLink></li>
-        <li><NavLink to="/nosotros">Servicios</NavLink></li>
+        <li><NavLink to="/about">About Us</NavLink></li>
+        <li><NavLink to="/nosotros">Nosotros</NavLink></li>
         {user ? (
           <>
             <li><NavLink to="/mi-cuenta">Mi Cuenta</NavLink></li>
@@ -35,5 +34,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
