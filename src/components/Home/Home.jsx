@@ -8,8 +8,9 @@ const Home = () => {
     <>
     <div className="home">
       <Carousel />
-      <h1>MBC Abogados</h1>
-      <p>¿En que podemos ayudarte?.</p>
+      <h1>Alejandro Asensio </h1>
+     <h2>Fisioterapeuta</h2>
+      <h3>¿En que podemos ayudarte?.</h3>
       
     </div>
     </>

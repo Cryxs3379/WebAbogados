@@ -11,6 +11,7 @@ import Register from './components/Register/Register';
 import MiCuenta from './components/MiCuenta/MiCuenta';
 import PrivateRoute from './components/PrivateRoute';
 import Localizanos from './components/Localizanos/Localizanos';
+import Servicios from './components/Servicios/Servicios';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/nosotros" element={<Localizanos />} />
+        <Route path="/servicios" element={<Servicios />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route

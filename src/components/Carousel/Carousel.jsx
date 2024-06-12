@@ -1,7 +1,7 @@
 // src/components/Carousel/Carousel.jsx
 import React, { useState, useEffect, useRef } from 'react';
-import image1 from '../../assets/malagadenoche.jpg';
-import image2 from '../../assets/city-7137958.jpg';
+import image1 from '../../assets/massage.jpg';
+ import image2 from '../../assets/massage.jpg';
 import './Carousel.css';
 
 const images = [image1, image2];
@@ -13,7 +13,7 @@ const CarouselComponent = () => {
   useEffect(() => {
     const applyZoom = () => {
       if (imageRef.current) {
-        imageRef.current.style.transition = 'transform 60s linear';
+        imageRef.current.style.transition = 'transform 120s linear';
         imageRef.current.style.transform = 'scale(1.1,2)';
       }
     };
@@ -21,7 +21,7 @@ const CarouselComponent = () => {
     if (imageRef.current) {
       imageRef.current.style.transition = 'none';
       imageRef.current.style.transform = 'scale(1)';
-      setTimeout(applyZoom, 100);
+      setTimeout(applyZoom, 50);
     }
 
     const changeImageTimeout = setTimeout(() => {

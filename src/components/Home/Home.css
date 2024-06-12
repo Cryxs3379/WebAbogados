@@ -24,6 +24,38 @@ div {
     text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para resaltar el texto */
     
   }
+  .home h2 {
+    position: absolute;
+    top: 50%; /* Ajusta este valor para mover el texto más arriba o más abajo */
+    left: 50%;
+    transform: translate(-50%, -180%);
+    z-index: 10;
+    color: hsl(0, 0%, 100%);
+    font-size: 3.5em;
+    font-family: 'Helvetica', sans-serif; /* Aplicar la fuente Helvetica */
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
+    padding: 15px; /* Espacio alrededor del texto */
+    border-radius: 30px; /* Bordes redondeados (opcional) */
+    border-color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para resaltar el texto */
+    
+  }
+  .home h3 {
+    position: absolute;
+    top: 80%; /* Ajusta este valor para mover el texto más arriba o más abajo */
+    left: 50%;
+    transform: translate(-50%, -180%);
+    z-index: 10;
+    color: hsl(0, 0%, 100%);
+    font-size: 3.5em;
+    font-family: 'Helvetica', sans-serif; /* Aplicar la fuente Helvetica */
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semitransparente */
+    padding: 15px; /* Espacio alrededor del texto */
+    border-radius: 30px; /* Bordes redondeados (opcional) */
+    border-color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra para resaltar el texto */
+    
+  }
   
  .home p {
     position: absolute;

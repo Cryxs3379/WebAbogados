@@ -5,15 +5,19 @@
   width: 100%;
   height: 100vh; /* Altura completa de la vista */
   overflow: hidden;
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar rellenos */
 }
 
-.about-us .carousel {
+.about-us::before {
+  content: "";
+  background: url('../assets/malagadenoche.jpg') no-repeat center center/cover; /* Ajustar ruta de la imagen si es necesario */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Asegura que el carrusel esté detrás del contenido */
+  z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
 
 .about-us-content {
@@ -35,10 +39,13 @@
   margin-bottom: 1rem;
 }
 
+
 .about-us-content p {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
+
+
 
 
 

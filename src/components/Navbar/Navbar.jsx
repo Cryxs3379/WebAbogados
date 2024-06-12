@@ -17,6 +17,7 @@ const Navbar = () => {
       <ul>
         <li><NavLink to="/">Inicio</NavLink></li>
         <li><NavLink to="/about">Nosotros</NavLink></li>
+        <li><NavLink to="/Servicios">Servicios</NavLink></li>
         <li><NavLink to="/nosotros">Localizanos</NavLink></li>
         {user ? (
           <>

@@ -1,0 +1,46 @@
+/* src/components/Servicios/Servicios.css */
+
+.servicios {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura completa de la vista */
+    overflow: hidden;
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar rellenos */
+  }
+  
+  .servicios::before {
+    content: "";
+    background: url('../assets/malagadenochedd.jpg') no-repeat center center/cover; /* Ajustar ruta de la imagen si es necesario */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+  }
+  
+  .servicios-content {
+    position: absolute;
+    top: calc(100px + 15vh); /* Ajusta esta distancia según la altura del Navbar */
+    left: 50%;
+    transform: translate(-50%, -10vh); /* Ajusta para centrar verticalmente */
+    background-color: rgba(255, 255, 255, 0.911);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 60%; /* Ajusta el ancho del cuadro */
+    height: calc(78vh - 30px); /* Ajusta la altura del cuadro, reduciendo un 20% */
+    text-align: center;
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+  }
+  
+  .servicios-content h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .servicios-content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
